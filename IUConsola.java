@@ -44,13 +44,11 @@ public class IUConsola {
                 case CANCELAR_EVENTOS:
                 cancelarEventos();
                 break;
-
             }
             pausa();
             opcion = menu();
         }
         salir();
-
     }
 
     /**
@@ -135,7 +133,6 @@ public class IUConsola {
     private void eventoMasLargo() {
         System.out.println("El evento de mayor duración es "
             + calendario.eventoMasLargo());
-
     }
 
     /**
@@ -159,7 +156,6 @@ public class IUConsola {
                     "(1-LUNES, 2-MARTES ...6-SABADO, 7-DOMINGO)");
                 dia = teclado.nextInt();
             }
-
             int borrados = calendario.cancelarEventos(meses, dia);
             System.out.println("Se han borrado " + borrados + " evento/s");
             teclado.nextLine();
@@ -167,9 +163,8 @@ public class IUConsola {
         catch (IllegalArgumentException e) {
             System.out.println("Mes incorrecto o no existe en el calendario");
         }
-
-        
     }
+    
     /**
      * Borrar la pantalla
      */
@@ -198,5 +193,4 @@ public class IUConsola {
     private void salir() {
         System.out.println("\n----- Finalizada la aplicación  ------\n");
     }
-
 }

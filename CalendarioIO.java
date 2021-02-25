@@ -8,7 +8,6 @@ import java.util.Scanner;
  * un fichero
  */
 public class CalendarioIO {
-    
 	/**
 	*  carga el calendario de eventos
 	*/
@@ -30,9 +29,8 @@ public class CalendarioIO {
 				sc.close();
 			}
 		}
-
 	}
-
+	
 	/**
 	 *  
 	 */
@@ -41,5 +39,4 @@ public class CalendarioIO {
 		return new Evento(datos[0], datos[1], datos[2], datos[3]);
 
 	}
-
 }
